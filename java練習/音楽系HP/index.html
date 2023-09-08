@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音楽HP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navvar">
+            <div class="log-wrap">
+                <img src="images/logo.png" alt="">
+                <h3>Real Sound</h3>
+            </div>
+            <ul>
+                <li href="#" alt="">ホーム</li>
+                <li href="#" alt="">音楽一覧</li>
+                <li href="#" alt="">お問い合わせ</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>NEVER <br>STOP <br> YOUR MUSIC</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here to Listen</p>
+                <img src="images/play.png" alt="" id="icon">
+            </div>
+        </div>
+    </div>
+<audio id="mysong" src="audio/song.mp3" type="audio/mp3"></audio>
+<script>
+    let mysong = document.getElementById("mysong");
+    let icon = document.getElementById("icon");
+
+    icon.onclick = function() {
+        if(mysong.paused){
+            mysong.play();
+            icon.src = "images/pause.png";
+        }
+        else{
+            mysong.pause();
+            icon.src = "images/play.png";
+        }
+    };
+</script>
+</body>
+
+</html>

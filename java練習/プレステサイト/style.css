@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;500;700&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#1767b1,#2be287);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 11rem;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right:45px;
+    transition: all 0.4;
+}
+
+nav ul li a:hover {
+    color: rgb(204, 0, 51);
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .title-section{
+    color: white;
+}
+
+.title-section {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    line-height: 70px;
+}
+
+.title-section .title {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.title-section .title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 10px;
+    height: 100%;
+    background:  linear-gradient(to bottom,rgb(233,130,219),rgb(158,80,158));
+}
+
+.title-section h3 {
+    font-size: 2rem;
+    color:  rgb(146, 171, 190);
+    margin-bottom:  10px;
+}
+
+.price p {
+    font-size:  1.7rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.price button {
+    padding: 15px 40px;
+    background:  linear-gradient(to right,rgb(233,130,219),rgb(158,80,158));
+}

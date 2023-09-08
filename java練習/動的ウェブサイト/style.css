@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(139, 72, 153, 0.726), rgba(240, 32, 77, 0.678));
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    font-weight: 550;
+    position: sticky;
+    z-index: 1;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+    margin-right: 12px;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.nav-links ul a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links ul a:hover {
+    color: #e6e92bd8;
+}
+
+.infomation {
+    width: 700px;
+    height: 700px;
+    /* background: #fff; */
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    /* background: #ccc; */
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    z-index: -100;
+    color: #fff;
+    transition: all 1s;
+}
+
+#circle h1 {
+    font-size: 2rem;
+}
+
+#circle p {
+    font-size: 1rem;
+}
+
+.feature {
+    position: absolute;
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+}
+
+.one {
+    display: flex;
+    top: 320px;
+    right: 20px;
+}
+
+.two {
+    display: flex;
+    top: 30px;
+    left: 210px;
+    transform: rotate(-90deg);
+}
+
+.three {
+    display: flex;
+    top: 320px;
+    left: -80px;
+    transform: rotate(180deg);
+}
+
+.four {
+    display: flex;
+    top: 600px;
+    left: 210px;
+    transform: rotate(90deg);
+}
+
+.feature div {
+    margin-left: 20px;
+}
+
+.feature div a {
+    margin-top: 8px;
+}
+
+.pc {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 27%;
+    z-index: 1;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.control img {
+    width: 15%;
+}
+
+#upBtn {
+    cursor: pointer;
+}
+
+#downBtn {
+    cursor: pointer;
+    transform: rotate(-180deg);
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 350px solid #fff;
+    border-right: 350px solid transparent;
+    border-left: 350px solid #fff;
+    border-bottom: 350px solid #fff;
+}

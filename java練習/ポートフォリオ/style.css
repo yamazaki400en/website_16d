@@ -1,0 +1,594 @@
+@import url('https://fonts.cdnfonts.com/css/strong-farmhouse');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Alice', serif;
+}
+
+#top {
+    opacity: 0;
+}
+
+.title {
+    width: 100%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.title h1 {
+    margin: 0 auto 50px auto;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+
+
+.box {
+    position: absolute;
+    top: 1080px;
+    right: -300px;
+    opacity: 0;
+    transition: 3s;
+}
+
+.box img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+#seri1 {
+    position: absolute;
+    z-index: -5;
+}
+
+.box.show {
+    transform: translateX(-190px);
+    opacity: 1;
+}
+
+#seri:hover {
+    opacity: 0;
+}
+
+
+#seri1 {
+    opacity: 1;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/aozora.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat;
+}
+
+body {
+    font-weight: 400;
+}
+
+main {
+    display: block;
+    text-decoration: none;
+}
+
+main h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 100px;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: rgb(55, 184, 87);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 3;
+}
+
+nav .inner {
+    padding: 25px;
+    display: flex;
+    list-style: none;
+}
+
+nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .inner ul li {
+    margin: 0;
+}
+
+nav .inner ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 1rem;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+
+.main {
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    padding-bottom: 125px;
+}
+
+.open nav {
+    visibility: visible;
+    z-index: 101;
+}
+
+nav .inner ul li a:hover {
+    background: #e4e4e4;
+}
+
+.toggle-btn {
+    display: block;
+    position: fixed;
+    top: 5vh;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    z-index: 102;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+.toggle-btn span:nth-child(1) {
+    top: 4px;
+}
+
+.toggle-btn span:nth-child(2) {
+    top: 14px;
+}
+
+.toggle-btn span:nth-child(3) {
+    bottom: 4px;
+}
+
+.open .toggle-btn span {
+    background-color: #fff;
+}
+
+.open .toggle-btn span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+}
+
+.open .toggle-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.open .toggle-btn span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+}
+
+
+.open #mask {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.kako {
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat;
+    text-align: center;
+    z-index: -2;
+}
+
+.back {
+    position: absolute;
+    background-color: #00ff80;
+    border-radius: 5%;
+    height: 129vh;
+    width: 35%;
+    right: 1.5%;
+    top: 280px;
+    border: solid 1px #b8ff34;
+}
+
+.sapuri {
+    position: absolute;
+    right: 9%;
+    top: 220px;
+    margin: auto;
+    width: 20%;
+    height: 20vh;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #00ff80;
+    border: solid 1px #b8ff34;
+    padding-top: 15px;
+}
+
+.box1 {
+    position: absolute;
+    right: 1.5%;
+    top: 310px;
+    margin: auto;
+    width: 35%;
+    height: 119vh;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+
+.flex {
+    display: table-column;
+}
+
+.naraberu h2 {
+    justify-content: center;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+}
+
+#hunka {
+    margin-top: 5%;
+}
+
+.histry {
+    position: absolute;
+    top: 280px;
+    margin-left: 1.5%;
+    height: 110vh;
+    background-color: rgba(189, 183, 183, 0.8);
+    width: 60%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px #424242;
+}
+
+#Histry {
+    position: absolute;
+    top: -30px;
+    left: 35%;
+    display: block;
+    width: 30%;
+    background-color: #ff5050;
+    border-radius: 50%;
+    padding: 10px 0px;
+}
+
+.histry img {
+    width: 130px;
+}
+
+.rekishi {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.text1 {
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0)
+}
+
+.text1 {
+    padding-top: 6%;
+}
+
+
+.colmun {
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.box1 div {
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+
+.box1 img {
+    width: 200px;
+    height: 200px;
+}
+
+.flex {
+    display: block;
+    margin-left: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.box1 h2 {
+    display: block;
+    font-size: 1rem;
+    background-color: #00ff80;
+}
+
+.box1 h3 {
+    display: block;
+    font-size: 1rem;
+    color: red;
+    background-color: #00ff80;
+}
+
+.text {
+    width: 200px;
+    text-align: center;
+}
+
+.iherb {
+    margin-bottom: 120px;
+}
+
+.semititle {
+    height: 100px;
+    width: 60%;
+    margin-left: 3%;
+    margin-top: 5%;
+    display: flex;
+    background-color: #333;
+    color: gold;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 50%;
+}
+
+.semititle h2 {
+    padding-top: 5px;
+    font-size: 200%;
+}
+
+.semititle i {
+    margin-right: 20px;
+    font-size: 300%;
+}
+
+.suwaipu {
+    padding: 30px 50px;
+}
+
+
+/* スライドする要素 */
+.content {
+    width: 150px;
+    height: 150px;
+}
+
+.content:nth-child(1) {
+    background-image: url(img/inu.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content:nth-child(2) {
+    background-image: url(img/yaki.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content:nth-child(3) {
+    background-image: url(img/mattyo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content:nth-child(4) {
+    background-image: url(img/seri.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.content:nth-child(5) {
+    background-image: url(img/isao.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation: 2s linear infinite rotation1;
+    opacity: 0.8;
+}
+
+/* スライドレールの枠 */
+.wrap {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 60%;
+    margin-left: 3%;
+}
+
+/* content4つをまとめたスライドブロック */
+.slideshow {
+    display: flex;
+    -webkit-animation: loop-slide 20s infinite linear 1s both;
+    animation: loop-slide 20s infinite linear 1s both;
+}
+
+
+
+@-webkit-keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* ホバー時に動きを止める（パターン2・3）*/
+.slide-paused:hover .slideshow {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/* ホバー時の装飾（パターン3） */
+.content-hover {
+    margin-right: 20px;
+}
+
+.content-hover:hover {
+    transform: translateY(-20px);
+    border-radius: 0 10%;
+    box-shadow: 0 3px 10px 0 #333;
+    opacity: 1;
+    cursor: pointer;
+}
+
+@keyframes rotation1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.about {
+    height: 100vh;
+}
+
+@keyframes typeWrite {
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    100% {
+        background: transparent;
+    }
+}
+
+.footer {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    background-color: #424242;
+    color: #fff;
+}
+
+form {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+#oto {
+    position: absolute;
+    right: 30%;
+    top: 20%;
+}
+
+#gaiyou {
+    position: absolute;
+    top: 33%;
+    font-size: 3rem;
+}
+
+input[type="submit"] {
+    margin-top: 5%;
+    width: 120px;
+    height: 32px;
+    background-color: #bd8c47;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .histry {
+        width: 70%;
+    }
+
+    .box1 {
+        width: 23%;
+        height: 100vh;
+    }
+
+    .back {
+        width: 23%;
+        height: 110vh;
+    }
+
+    .sapuri {
+        opacity: 0;
+    }
+
+    .flex {
+        width: 20%;
+    }
+
+    .flex img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .flex h2 {
+        width: 80px;
+        font-size: 0.5rem;
+    }
+
+    .flex h3 {
+        width: 80px;
+        font-size: 0.5rem;
+    }
+
+    .box.show {
+        transform: translateX(-20px);
+    }
+
+    #oto {
+        left:10%;
+    }
+
+    #gaiyou {
+        font-size: 1rem;
+        top: 120px;
+    }
+}

@@ -1,0 +1,80 @@
+body {
+  background: gray;
+}
+
+.container {
+  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+main {
+  flex: 3;
+  margin-right: 3rem;
+}
+
+table, th, td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+aside {
+  flex: 1;
+}
+
+/* form */
+.inquiry {
+  display: flex;
+}
+
+.inquiry section {
+  flex: 40%;
+  margin-left: 2rem;
+}
+
+input {
+  margin: 1rem 0;
+}
+
+footer {
+  background: dimgray;
+  color: white;
+  margin-top: 3rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+#gacha-display{
+  margin-top: 1rem;
+  min-height: 3rem;
+}
+
+#gacha-button{
+  margin-bottom: 3rem;
+}
+
+/* スマホ表示 - 幅767px以下の場合 */
+@media (max-width:767px) {
+  .row, .inquiry {
+    flex-direction: column;
+  }
+}
